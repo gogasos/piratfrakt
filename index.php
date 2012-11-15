@@ -1,6 +1,4 @@
-﻿<?php 
-require_once('./include/inc.core.php');
-?>
+
 
 <!DOCTYPE html>
 <html>
@@ -10,6 +8,8 @@ require_once('./include/inc.core.php');
 		<title>Piratbåt</title>
 	</head>
 	<body>
-	
+﻿<?php 
+require_once('./include/inc.core.php');
+?>
 	</body>
 </html>
