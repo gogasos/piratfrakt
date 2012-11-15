@@ -1,17 +1,16 @@
 <?php
-$root_folder = './files';
-if (file_exists($root_folder))
+$search_string = '';
+for ($i=0;$i<strlen($_POST['find']);$i++)
 {
-	$folder = scandir($root_folder);
-	foreach($folder as $file) {
-		if ($file == '..' || $file == '.')
-			continue;
-		$file = basename($file); // basic sanitisation
-		echo $file;
-		if (is_file($root_folder.'/'.$file))
-		{
-			echo('<a href="'.$root_folder.'/'.$file.'">Download</a>').'<br />';
-		}
-	}
+	$search_string .= '['.strtolower($_POST['find'][$i]).strtoupper($_POST['find'][$i]).']';
 }
+
+$toFind = '*'.htmlspecialchars($search_string).'*';
+$dir = "./files";
+foreach (glob($dir.'/'.$toFind) AS $found)
+{
+    echo $found; // Throw your links in here.
+}
+
+$scandir = scandir($dir);
 ?>
