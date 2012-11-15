@@ -5,11 +5,11 @@
 	<head>
 		<meta http-equiv="Content-Type" content="html/text; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="search.css" />
-		<title>Piratbåt</title>
+		<title>Piratfrakt</title>
 	</head>
 	<body>
 <form class="form-wrapper" action=""" method="post">
-        <input type="text" name="find" id="search" placeholder="Search for CSS3, HTML5, jQuery ..." required>
+        <input type="text" name="find" id="search" placeholder="Sök efter filer..." required>
         <input type="submit" value="go" id="submit">
 </form>
 <?php 
