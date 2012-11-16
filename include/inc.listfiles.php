@@ -13,7 +13,7 @@ $table_data = '';
 foreach (glob($dir.'/'.$toFind) AS $found)
 {
 	$search_results++;
-	$table_data .= '<tr><td><a href="'.$found.'">'.basename($found).'</a></td></tr>';
+	$table_data .= '<tr><td><a href="'.$found.'">'.basename($found).' </a></td></tr>';
 }
 if ($search_results > 0)
 {
@@ -23,6 +23,8 @@ if ($search_results > 0)
 		<th>Filename - results: <?php echo $search_results; ?></th>
 	</thead>
 	<tbody>
+	
+	
 	<?php
 	echo $table_data;
 	?>
