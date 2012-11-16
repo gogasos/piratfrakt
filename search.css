@@ -134,3 +134,9 @@ table#file_list td
         background-image: linear-gradient(top, #f6f6f6, #eae8e8);
 	border-radius:10px;
 }
+
+body {
+  background-image: url("/files/pirate_boat_T.png");
+  background-position: 50% 5%;
+  background-repeat: no-repeat;
+}
